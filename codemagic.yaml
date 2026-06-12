@@ -1,0 +1,14 @@
+workflows:
+  node-build:
+    name: Apex-Bridge Node.js Build
+    max_build_duration: 30
+    instance_type: mac_mini_m2
+    environment:
+      node: 20
+    scripts:
+      - name: Install dependencies
+        script: npm ci
+      - name: Build TypeScript
+        script: npm run build
+    artifacts:
+      - dist/**
