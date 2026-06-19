@@ -4,10 +4,12 @@
 
 export async function sendParams(payload: unknown) {
   // TODO: POST /api/params
+  void payload;
 }
 
 export async function handshake(payload: unknown) {
   // TODO: POST /api/handshake
+  void payload;
 }
 
 export async function healthCheck() {

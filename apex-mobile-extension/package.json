@@ -7,7 +7,7 @@
     "start": "react-native start",
     "build": "tsc",
     "test": "jest",
-    "sync": "node src/sync.js"
+    "sync": "ts-node src/sync.ts"
   },
   "keywords": [
     "mobile-coding",
