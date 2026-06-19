@@ -1,0 +1,29 @@
+{
+  "name": "Apex Bridge Mobile Sync",
+  "displayName": "Apex Bridge: Mobile Coding Extension",
+  "description": "Sync mobile edits to VS Code Desktop via Apex Bridge",
+  "version": "2.0.0",
+  "publisher": "MakeItAllCountLLC",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onCommand:apexBridge.syncMobile",
+    "onCommand:apexBridge.pushChanges"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "apexBridge.syncMobile",
+        "title": "Apex Bridge: Sync Mobile Changes"
+      },
+      {
+        "command": "apexBridge.pushChanges",
+        "title": "Apex Bridge: Push to GitHub"
+      }
+    ]
+  },
+  "author": "Rahmann Manzar Herman",
+  "license": "SEE LICENSE IN LICENSE.txt"
+}
